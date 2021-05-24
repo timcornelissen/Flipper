@@ -9,10 +9,10 @@ To calculate how the configuration of dipoles evolves over time, a kMC simulatio
 * Calculate the flipping rates r<sub>i of all cells 
 * Calculate the cumulative flipping rate array R<sub>j</sub>= &Sigma;<sub>i</sub><sup>j</sup> r<sub>i</sub> for j=1,...,N
 * For step = 1:N_steps
-*        Get a uniform random number u
-*        Find the cell to be flipped by finding for which cell k we have R<sub>k-1</sub><uR<sub>N</sub><R<sub>k</sub>
-*        Flip cell k
-*        Update r<sub>k</sub> and consequently R<sub>j</sub>
+  * Get a uniform random number u
+  * Find the cell to be flipped by finding for which cell k we have R<sub>k-1</sub><uR<sub>N</sub><R<sub>k</sub>
+  * Flip cell k
+  * Update r<sub>k</sub> and consequently R<sub>j</sub>
 * Finish up simulation and calculate properties of final state (such as correlation functions)
 
 The most computationally expensive step is finding the cell to flip.
